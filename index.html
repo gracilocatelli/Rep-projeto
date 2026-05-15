@@ -197,19 +197,20 @@ background: var(–dourado);
 flex-shrink: 0; margin-top: 11px;
 }
 .rep-quote-box {
-border-left: 2px solid var(–dourado);
-padding: 24px 28px;
-background: rgba(198,167,94,0.05);
+border-left: 3px solid var(–dourado);
+padding: 28px 32px;
+background: rgba(232, 225, 213, 0.08);
+box-shadow: inset 1px 0 0 rgba(198, 167, 94, 0.15);
 }
 .rep-quote-box p {
 font-family: ‘Playfair Display’, serif;
 font-size: 1.3rem; font-style: italic; line-height: 1.6;
-color: var(–bege); margin-bottom: 14px;
+color: #F0E8D5; margin-bottom: 16px;
 }
 .rep-quote-box cite {
-font-size: 0.72rem; font-style: normal;
-letter-spacing: 0.12em; text-transform: uppercase;
-color: rgba(198,167,94,0.55);
+font-size: 0.72rem; font-style: normal; font-weight: 700;
+letter-spacing: 0.14em; text-transform: uppercase;
+color: var(–dourado);
 }
 
 /* SOLUÇÃO */
@@ -593,6 +594,10 @@ html body .rep-como-section .rep-heading-serif,
 html body .rep-como-section .rep-step-title,
 html body .rep-como-section .rep-step-desc { color: #F5F3EF !important; }
 html body .rep-final-cta, html body .rep-final-cta .rep-final-sub { color: #F5F3EF !important; }
+/* Quote box no problema */
+html body .rep-quote-box { background: rgba(232, 225, 213, 0.08) !important; border-left: 3px solid #C6A75E !important; }
+html body .rep-quote-box p { color: #F0E8D5 !important; }
+html body .rep-quote-box cite { color: #C6A75E !important; }
 /* Botões */
 html body .rep-btn-hero,
 html body .rep-btn-final { background: #C6A75E !important; color: #0F2F3A !important; background-image: none !important; border: none !important; }
