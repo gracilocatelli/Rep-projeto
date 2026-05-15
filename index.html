@@ -55,9 +55,9 @@ border-bottom: 1px solid rgba(198,167,94,0.25);
 }
 .rep-nav-logo img { height: 52px; width: auto; display: block; }
 .rep-nav-cta {
-background: transparent;
-color: var(–dourado);
-border: 1.5px solid var(–dourado);
+background: transparent !important;
+color: var(–dourado) !important;
+border: 1.5px solid var(–dourado) !important;
 padding: 10px 28px;
 font-family: ‘Montserrat’, sans-serif;
 font-size: 0.75rem; font-weight: 700;
@@ -70,7 +70,7 @@ transition: all 0.25s;
 /* HERO */
 .rep-hero {
 min-height: 100vh;
-background: var(–azul);
+background: var(–azul) !important;
 padding: 76px 80px 0;
 position: relative; overflow: hidden;
 display: flex; align-items: stretch;
@@ -120,8 +120,9 @@ color: rgba(232,225,213,0.75); max-width: 460px; margin-bottom: 48px;
 .rep-hero-sub strong { color: var(–bege); font-weight: 600; }
 .rep-hero-ctas { display: flex; flex-direction: column; gap: 14px; max-width: 320px; }
 .rep-btn-hero {
-background: var(–dourado);
-color: var(–azul); padding: 17px 32px;
+background: var(–dourado) !important;
+color: var(–azul) !important; padding: 17px 32px;
+background-image: none !important;
 font-family: ‘Montserrat’, sans-serif;
 font-size: 0.85rem; font-weight: 700;
 letter-spacing: 0.1em; text-transform: uppercase;
@@ -161,7 +162,7 @@ background: linear-gradient(90deg, transparent, var(–dourado), transparent);
 
 /* PROBLEMA */
 .problema-section {
-background: var(–texto);
+background: var(–texto) !important;
 padding: 100px 80px;
 }
 .problema-inner {
@@ -213,7 +214,7 @@ color: rgba(198,167,94,0.55);
 
 /* SOLUÇÃO */
 .solucao-section {
-background: var(–branco); padding: 100px 80px;
+background: var(–branco) !important; padding: 100px 80px;
 }
 .solucao-inner {
 max-width: 1100px; margin: 0 auto;
@@ -227,6 +228,7 @@ color: var(–texto-soft); margin-bottom: 16px;
 .solucao-text .rep-label-gold { color: var(–dourado-dark); }
 .rep-btn-outline {
 display: inline-block; margin-top: 28px;
+background: transparent !important; background-image: none !important;
 background: transparent; color: var(–azul);
 border: 1.5px solid var(–azul); padding: 14px 28px;
 font-family: ‘Montserrat’, sans-serif;
@@ -273,7 +275,7 @@ color: var(–dourado-dark); letter-spacing: 0.06em;
 }
 
 /* BENEFÍCIOS */
-.beneficios-section { background: var(–bege); padding: 100px 80px; }
+.beneficios-section { background: var(–bege) !important; padding: 100px 80px; }
 .beneficios-inner { max-width: 1100px; margin: 0 auto; }
 .beneficios-grid {
 display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; margin-top: 60px;
@@ -296,7 +298,7 @@ font-size: 1rem; color: var(–azul); margin-bottom: 10px;
 .ben-desc { font-size: 0.87rem; font-weight: 300; color: var(–texto-soft); line-height: 1.7; }
 
 /* COMO FUNCIONA */
-.como-section { background: var(–azul); padding: 100px 80px; }
+.como-section { background: var(–azul) !important; padding: 100px 80px; }
 .como-inner { max-width: 1100px; margin: 0 auto; }
 .como-header { text-align: center; margin-bottom: 70px; }
 .como-header .rep-heading-serif { color: white; }
@@ -326,7 +328,7 @@ color: rgba(232,225,213,0.65);
 }
 
 /* OFERTA */
-.oferta-section { background: var(–branco); padding: 100px 80px; }
+.oferta-section { background: var(–branco) !important; padding: 100px 80px; }
 .oferta-inner { max-width: 1200px; margin: 0 auto; }
 .oferta-header { text-align: center; margin-bottom: 60px; }
 .oferta-header .rep-heading-serif { color: var(–azul); }
@@ -386,7 +388,7 @@ font-size: 2rem; color: var(–azul);
 .rep-modulo-price-val sup { font-size: 1rem; vertical-align: super; }
 .rep-btn-modulo {
 display: block; margin-top: 16px;
-background: var(–azul); color: white;
+background: var(–azul) !important; color: white !important;
 padding: 13px 20px; text-align: center;
 font-family: ‘Montserrat’, sans-serif;
 font-size: 0.75rem; font-weight: 700;
@@ -402,7 +404,7 @@ text-align: center;
 }
 
 /* AUTORA */
-.autora-section { background: var(–bege); padding: 100px 80px; }
+.autora-section { background: var(–bege) !important; padding: 100px 80px; }
 .autora-inner {
 max-width: 1100px; margin: 0 auto;
 display: grid; grid-template-columns: 380px 1fr; gap: 80px; align-items: center;
@@ -466,7 +468,7 @@ color: var(–azul); line-height: 1.6;
 }
 
 /* FAQ */
-.faq-section { background: var(–branco); padding: 100px 80px; }
+.faq-section { background: var(–branco) !important; padding: 100px 80px; }
 .faq-inner { max-width: 760px; margin: 0 auto; }
 .faq-inner .rep-heading-serif { color: var(–azul); margin-bottom: 0; }
 .faq-list { margin-top: 50px; }
@@ -511,7 +513,8 @@ position: relative; z-index: 1;
 }
 .rep-btn-final {
 display: inline-block; position: relative; z-index: 1;
-background: var(–dourado); color: var(–azul);
+background: var(–dourado) !important; color: var(–azul) !important;
+background-image: none !important;
 padding: 18px 52px;
 font-family: ‘Montserrat’, sans-serif;
 font-size: 0.82rem; font-weight: 700;
@@ -565,8 +568,17 @@ to { opacity: 1; transform: translateY(0); }
 .rep-hero-sub { animation-delay: 0.3s; }
 .rep-hero-ctas { animation-delay: 0.4s; }
 .rep-hero-right { animation: fadeUp 0.8s ease 0.3s both; }
-</style>
 
+/* Blindagem extra: protege contra CSS externo (Hotmart widget) que possa vazar */
+html body .rep-hero { background: #0F2F3A !important; background-image: none !important; }
+html body .rep-btn-hero,
+html body .rep-btn-final { background: #C6A75E !important; color: #0F2F3A !important; background-image: none !important; }
+html body .rep-btn-modulo { background: #0F2F3A !important; color: white !important; background-image: none !important; }
+html body .rep-nav-cta { background: transparent !important; color: #C6A75E !important; background-image: none !important; }
+html body .rep-btn-outline { background: transparent !important; background-image: none !important; }
+html body nav { background: rgba(15,47,58,0.95) !important; }
+
+</style>
 </head>
 <body>
 
